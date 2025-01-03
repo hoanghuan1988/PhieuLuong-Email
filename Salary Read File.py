@@ -1,3 +1,6 @@
+
+def Salary_read_file:
+
 import os
 import pandas as pd
 from fpdf import FPDF
@@ -98,7 +101,7 @@ for index, row in data.iterrows():
 
         pdf.cell(200, 10, txt=f"PHIẾU LƯƠNG", ln=True, align='C')
         pdf.cell(200, 10, txt=f"Họ và Tên / Mã Nhân Viên : {employee_name} / {staff_id} ", ln=True, align='C')
-        pdf.cell(200, 15, txt=f"VND", ln=True, align='R')
+        pdf.cell(200, 10, txt=f"Đơn vị:VNĐ", ln=True, align='R')
 
 
         pdf.set_font("DejaVu", size=8)
@@ -160,7 +163,7 @@ for index, row in data.iterrows():
         pdf.cell(200, 20, txt=f"Cảm ơn bạn đã luôn số gắng,nỗ lực suốt thời gian qua!", ln=True, align='C')
 
         # Sanitize file name
-        sanitized_name = "".join(char for char in str(employee_name) if char.isalnum() or char in " _-")
+        sanitized_name = "".join(char for char in str(staff_id)if char.isalnum() or char in " _-")
         file_path = f"salary_slips/{sanitized_name}_Salary_Slip.pdf"
 
         # Save the PDF
