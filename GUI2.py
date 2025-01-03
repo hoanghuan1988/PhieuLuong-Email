@@ -11,7 +11,7 @@ CONFIG_FILE = "email_config.json"
 class SalarySlipMailerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Salary Slip Mailer")
+        self.root.title("HR Tool_Tạo phiếu lương & gửi email")
         self.root.geometry("500x400")
 
         # Menu Bar
