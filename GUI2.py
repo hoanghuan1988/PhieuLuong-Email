@@ -24,7 +24,7 @@ class SalarySlipMailerApp:
         self.menu_bar.add_cascade(label="Settings", menu=self.settings_menu)
 
         # Excel File Selection
-        self.excel_label = tk.Label(root, text="Select Salary Data Excel File:")
+        self.excel_label = tk.Label(root, text="Chọn file excel phiếu lương:")
         self.excel_label.pack(pady=5)
         self.excel_frame = tk.Frame(root)
         self.excel_frame.pack(pady=5)
@@ -34,11 +34,11 @@ class SalarySlipMailerApp:
         self.excel_button.pack(side=tk.LEFT)
 
         # Process Button
-        self.process_button = tk.Button(root, text="Process Salary Slips", command=self.process_salary_slips)
+        self.process_button = tk.Button(root, text="Tạo phiếu lương chi tiết", command=self.process_salary_slips)
         self.process_button.pack(pady=10)
 
         # Salary Slip Folder Selection
-        self.folder_label = tk.Label(root, text="Select Salary Slip Folder:")
+        self.folder_label = tk.Label(root, text="Chọn thư mục chứa phiếu lương:")
         self.folder_label.pack(pady=5)
         self.folder_frame = tk.Frame(root)
         self.folder_frame.pack(pady=5)
