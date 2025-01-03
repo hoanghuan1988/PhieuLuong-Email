@@ -48,7 +48,7 @@ class SalarySlipMailerApp:
         self.folder_button.pack(side=tk.LEFT)
 
         # Start Button
-        self.start_button = tk.Button(root, text="Send Emails", command=self.start_sending_emails)
+        self.start_button = tk.Button(root, text="Gửi Emails", command=self.start_sending_emails)
         self.start_button.pack(pady=20)
 
         # Status Label
